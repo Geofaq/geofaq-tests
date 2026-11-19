@@ -68,7 +68,7 @@ begin
   from (select gv.v, gt.t, row_number() over (partition by gt.t order by gv.v) k
         from generate_series(1, 20) gv(v) cross join generate_series(1, 17) gt(t)
         where not exists (select 1 from _items i where i.v = gv.v and i.t = gt.t)) m
-  join (select q.t, q.id, row_number() over (partition by q.t order by q.prio desc, q.so desc, q.id) k from _q q) p
+  join (select q.t, q.id, row_number() over (partition by q.t order by q.prio, q.so, q.id) k from _q q) p
     on p.t = m.t and p.k = m.k;
 
   select count(*) into n_items from _items;
