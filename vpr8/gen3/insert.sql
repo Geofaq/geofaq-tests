@@ -134,40 +134,40 @@ values ('geo','vpr8',2,'input_number',replace($q$Выберите из спис�
 
 Государственная граница России проходит и по акватории Каспийского моря: здесь у России есть морская граница с Казахстаном и ___.
 1) Грузией
-2) Арменией
-3) Азербайджаном
-4) Турцией
+2) Азербайджаном
+3) Турцией
+4) Арменией
 
 Запишите номер выбранной страны.$q$,'⇥',chr(9)),2,'draft',null,$q$GeoFAQ: задания 2 и 4, переработка заданий ОГЭ 2 (границы) и ОГЭ 15 (природопользование) под формат ВПР-8$q$,2026,8,8,$q${"set": "vpr8-gen3", "format": "vpr2027", "src_key": "b01", "from": "ОГЭ 2 (вписать) → выбор из 4"}$q$::jsonb,$q$По Каспию Россия граничит только с Казахстаном и Азербайджаном. С Грузией граница сухопутная (по Кавказу), с Арменией и Турцией общей границы нет.$q$,(select id from task_templates where code='vpr8-02-border-gap')) returning id)
-insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$3$q$,null,1,null from nq;
+insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$2$q$,null,1,null from nq;
 with nq as (insert into questions (subject,assessment,task_no,type,text,difficulty,status,image_url,source,source_year,grade_min,grade_max,meta,short_explanation,template_id)
 values ('geo','vpr8',2,'input_number',replace($q$Выберите из списка название страны, которое нужно вставить на место пропуска.
 
 Амур — крупнейшая река Дальнего Востока. На большом протяжении по ней проходит государственная граница России и ___.
-1) Монголии
-2) Китая
-3) КНДР
-4) Японии
+1) КНДР
+2) Японии
+3) Монголии
+4) Китая
 
 Запишите номер выбранной страны.$q$,'⇥',chr(9)),2,'draft',null,$q$GeoFAQ: задания 2 и 4, переработка заданий ОГЭ 2 (границы) и ОГЭ 15 (природопользование) под формат ВПР-8$q$,2026,8,8,$q${"set": "vpr8-gen3", "format": "vpr2027", "src_key": "b02", "from": "ОГЭ 2 (вписать) → выбор из 4"}$q$::jsonb,$q$По Амуру (и его притокам Аргуни и Уссури) проходит граница с Китаем. С Монголией и КНДР граница проходит в другом месте, с Японией — только морская.$q$,(select id from task_templates where code='vpr8-02-border-gap')) returning id)
-insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$2$q$,null,1,null from nq;
+insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$4$q$,null,1,null from nq;
 with nq as (insert into questions (subject,assessment,task_no,type,text,difficulty,status,image_url,source,source_year,grade_min,grade_max,meta,short_explanation,template_id)
 values ('geo','vpr8',2,'input_number',replace($q$Выберите из списка название страны, которое нужно вставить на место пропуска.
 
 Протяжённость государственной границы России с ___ — около 3,5 тыс. км: длиннее только российско-казахстанский и российско-китайский участки.
-1) Финляндией
-2) Монголией
-3) Норвегией
-4) Грузией
+1) Норвегией
+2) Грузией
+3) Финляндией
+4) Монголией
 
 Запишите номер выбранной страны.$q$,'⇥',chr(9)),2,'draft',null,$q$GeoFAQ: задания 2 и 4, переработка заданий ОГЭ 2 (границы) и ОГЭ 15 (природопользование) под формат ВПР-8$q$,2026,8,8,$q${"set": "vpr8-gen3", "format": "vpr2027", "src_key": "b03", "from": "ОГЭ 2 (вписать) → выбор из 4"}$q$::jsonb,$q$Граница с Монголией — третья по длине (около 3,5 тыс. км), идёт по хребтам Алтая, Саян и Забайкалья. С Финляндией около 1,3 тыс. км, с Грузией около 0,9 тыс. км, с Норвегией — меньше 200 км.$q$,(select id from task_templates where code='vpr8-02-border-gap')) returning id)
-insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$2$q$,null,1,null from nq;
+insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$4$q$,null,1,null from nq;
 with nq as (insert into questions (subject,assessment,task_no,type,text,difficulty,status,image_url,source,source_year,grade_min,grade_max,meta,short_explanation,template_id)
 values ('geo','vpr8',2,'input_number',replace($q$Выберите из списка название страны, которое нужно вставить на место пропуска.
 
 Калининградская область окружена на суше территорией других государств. В Балтийском море у её берегов проходит морская граница России с Литвой и ___.
-1) Латвией
-2) Эстонией
+1) Эстонией
+2) Латвией
 3) Польшей
 4) Белоруссией
 
@@ -177,65 +177,65 @@ with nq as (insert into questions (subject,assessment,task_no,type,text,difficul
 values ('geo','vpr8',2,'input_number',replace($q$Выберите из списка название страны, которое нужно вставить на место пропуска.
 
 В Беринговом и Чукотском морях проходит морская граница России с ___.
-1) Канадой
-2) Японией
-3) США
-4) Норвегией
+1) США
+2) Канадой
+3) Норвегией
+4) Японией
 
 Запишите номер выбранной страны.$q$,'⇥',chr(9)),2,'draft',null,$q$GeoFAQ: задания 2 и 4, переработка заданий ОГЭ 2 (границы) и ОГЭ 15 (природопользование) под формат ВПР-8$q$,2026,8,8,$q${"set": "vpr8-gen3", "format": "vpr2027", "src_key": "b05", "from": "ОГЭ 2 (вписать) → выбор из 4"}$q$::jsonb,$q$Берингов пролив отделяет Чукотку от Аляски — штата США; граница проходит между островами Ратманова (Россия) и Крузенштерна (США). Канада с Россией не граничит.$q$,(select id from task_templates where code='vpr8-02-border-gap')) returning id)
-insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$3$q$,null,1,null from nq;
+insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$1$q$,null,1,null from nq;
 with nq as (insert into questions (subject,assessment,task_no,type,text,difficulty,status,image_url,source,source_year,grade_min,grade_max,meta,short_explanation,template_id)
 values ('geo','vpr8',2,'input_number',replace($q$Выберите из списка название страны, которое нужно вставить на место пропуска.
 
 Ленинградская область — один из приграничных регионов России: она граничит с Финляндией и ___.
-1) Латвией
-2) Эстонией
-3) Литвой
-4) Белоруссией
+1) Литвой
+2) Белоруссией
+3) Эстонией
+4) Латвией
 
 Запишите номер выбранной страны.$q$,'⇥',chr(9)),2,'draft',null,$q$GeoFAQ: задания 2 и 4, переработка заданий ОГЭ 2 (границы) и ОГЭ 15 (природопользование) под формат ВПР-8$q$,2026,8,8,$q${"set": "vpr8-gen3", "format": "vpr2027", "src_key": "b06", "from": "ОГЭ 2 (вписать) → выбор из 4"}$q$::jsonb,$q$Граница с Эстонией идёт по реке Нарве; Ленинградская область граничит с Финляндией и Эстонией. С Латвией граничит Псковская область, с Литвой — Калининградская.$q$,(select id from task_templates where code='vpr8-02-border-gap')) returning id)
-insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$2$q$,null,1,null from nq;
+insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$3$q$,null,1,null from nq;
 with nq as (insert into questions (subject,assessment,task_no,type,text,difficulty,status,image_url,source,source_year,grade_min,grade_max,meta,short_explanation,template_id)
 values ('geo','vpr8',2,'input_number',replace($q$Выберите из списка название страны, которое нужно вставить на место пропуска.
 
 Мурманская область имеет выход к государственной границе России с Финляндией и ___.
 1) Швецией
-2) Норвегией
-3) Эстонией
-4) Данией
+2) Данией
+3) Норвегией
+4) Эстонией
 
 Запишите номер выбранной страны.$q$,'⇥',chr(9)),2,'draft',null,$q$GeoFAQ: задания 2 и 4, переработка заданий ОГЭ 2 (границы) и ОГЭ 15 (природопользование) под формат ВПР-8$q$,2026,8,8,$q${"set": "vpr8-gen3", "format": "vpr2027", "src_key": "b07", "from": "ОГЭ 2 (вписать) → выбор из 4"}$q$::jsonb,$q$На северо-западе Кольского полуострова Мурманская область граничит с Норвегией (и по суше, и в Баренцевом море). Швеция и Дания с Россией не граничат.$q$,(select id from task_templates where code='vpr8-02-border-gap')) returning id)
-insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$2$q$,null,1,null from nq;
+insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$3$q$,null,1,null from nq;
 with nq as (insert into questions (subject,assessment,task_no,type,text,difficulty,status,image_url,source,source_year,grade_min,grade_max,meta,short_explanation,template_id)
 values ('geo','vpr8',2,'input_number',replace($q$Выберите из списка название страны, которое нужно вставить на место пропуска.
 
 Псковская область граничит сразу с тремя государствами: с Белоруссией, Эстонией и ___.
-1) Литвой
-2) Латвией
-3) Польшей
-4) Финляндией
+1) Польшей
+2) Финляндией
+3) Латвией
+4) Литвой
 
 Запишите номер выбранной страны.$q$,'⇥',chr(9)),2,'draft',null,$q$GeoFAQ: задания 2 и 4, переработка заданий ОГЭ 2 (границы) и ОГЭ 15 (природопользование) под формат ВПР-8$q$,2026,8,8,$q${"set": "vpr8-gen3", "format": "vpr2027", "src_key": "b08", "from": "ОГЭ 2 (вписать) → выбор из 4"}$q$::jsonb,$q$Псковская область — единственный регион России, граничащий сразу с тремя странами: Эстонией, Латвией и Белоруссией. С Литвой и Польшей граничит Калининградская область.$q$,(select id from task_templates where code='vpr8-02-border-gap')) returning id)
-insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$2$q$,null,1,null from nq;
+insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$3$q$,null,1,null from nq;
 with nq as (insert into questions (subject,assessment,task_no,type,text,difficulty,status,image_url,source,source_year,grade_min,grade_max,meta,short_explanation,template_id)
 values ('geo','vpr8',2,'input_number',replace($q$Выберите из списка название страны, которое нужно вставить на место пропуска.
 
 По Кунаширскому проливу между островом Кунашир (Курильские острова) и островом Хоккайдо проходит граница России с ___.
-1) Китаем
+1) Республикой Корея
 2) КНДР
-3) Республикой Корея
-4) Японией
+3) Японией
+4) Китаем
 
 Запишите номер выбранной страны.$q$,'⇥',chr(9)),2,'draft',null,$q$GeoFAQ: задания 2 и 4, переработка заданий ОГЭ 2 (границы) и ОГЭ 15 (природопользование) под формат ВПР-8$q$,2026,8,8,$q${"set": "vpr8-gen3", "format": "vpr2027", "src_key": "b09", "from": "ОГЭ 2 (вписать) → выбор из 4"}$q$::jsonb,$q$Остров Хоккайдо принадлежит Японии; с ней у России только морская граница — по проливам Лаперуза, Кунаширскому и другим. Республика Корея с Россией не граничит.$q$,(select id from task_templates where code='vpr8-02-border-gap')) returning id)
-insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$4$q$,null,1,null from nq;
+insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$3$q$,null,1,null from nq;
 with nq as (insert into questions (subject,assessment,task_no,type,text,difficulty,status,image_url,source,source_year,grade_min,grade_max,meta,short_explanation,template_id)
 values ('geo','vpr8',2,'input_number',replace($q$Выберите из списка название страны, которое нужно вставить на место пропуска.
 
 Брянская область — приграничный регион: она граничит с Украиной и ___.
-1) Польшей
+1) Молдавией
 2) Белоруссией
-3) Литвой
-4) Молдавией
+3) Польшей
+4) Литвой
 
 Запишите номер выбранной страны.$q$,'⇥',chr(9)),2,'draft',null,$q$GeoFAQ: задания 2 и 4, переработка заданий ОГЭ 2 (границы) и ОГЭ 15 (природопользование) под формат ВПР-8$q$,2026,8,8,$q${"set": "vpr8-gen3", "format": "vpr2027", "src_key": "b10", "from": "ОГЭ 2 (вписать) → выбор из 4"}$q$::jsonb,$q$Брянская область на западе граничит с Белоруссией, на юге — с Украиной. Польша и Литва граничат только с Калининградской областью, Молдавия с Россией не граничит.$q$,(select id from task_templates where code='vpr8-02-border-gap')) returning id)
 insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$2$q$,null,1,null from nq;
@@ -244,20 +244,20 @@ values ('geo','vpr8',2,'input_number',replace($q$Выберите из спис�
 
 Республика Алтай — горный приграничный регион: она граничит с Монголией, Китаем и ___.
 1) Киргизией
-2) Таджикистаном
-3) Казахстаном
+2) Казахстаном
+3) Таджикистаном
 4) Узбекистаном
 
 Запишите номер выбранной страны.$q$,'⇥',chr(9)),2,'draft',null,$q$GeoFAQ: задания 2 и 4, переработка заданий ОГЭ 2 (границы) и ОГЭ 15 (природопользование) под формат ВПР-8$q$,2026,8,8,$q${"set": "vpr8-gen3", "format": "vpr2027", "src_key": "b11", "from": "ОГЭ 2 (вписать) → выбор из 4"}$q$::jsonb,$q$На западе Республика Алтай граничит с Казахстаном, на юге — с Китаем и Монголией. Киргизия, Таджикистан и Узбекистан с Россией не граничат.$q$,(select id from task_templates where code='vpr8-02-border-gap')) returning id)
-insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$3$q$,null,1,null from nq;
+insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$2$q$,null,1,null from nq;
 with nq as (insert into questions (subject,assessment,task_no,type,text,difficulty,status,image_url,source,source_year,grade_min,grade_max,meta,short_explanation,template_id)
 values ('geo','vpr8',2,'input_number',replace($q$Выберите из списка название страны, которое нужно вставить на место пропуска.
 
 Иртыш — трансграничная река: для использования её вод нужны договорённости России, Казахстана и ___, по территории которых она протекает.
 1) Монголии
 2) Китая
-3) Киргизии
-4) Узбекистана
+3) Узбекистана
+4) Киргизии
 
 Запишите номер выбранной страны.$q$,'⇥',chr(9)),2,'draft',null,$q$GeoFAQ: задания 2 и 4, переработка заданий ОГЭ 2 (границы) и ОГЭ 15 (природопользование) под формат ВПР-8$q$,2026,8,8,$q${"set": "vpr8-gen3", "format": "vpr2027", "src_key": "b12", "from": "ОГЭ 2 (вписать) → выбор из 4"}$q$::jsonb,$q$Иртыш начинается в горах Монгольского Алтая на территории Китая, течёт через Казахстан и впадает в Обь в России.$q$,(select id from task_templates where code='vpr8-02-border-gap')) returning id)
 insert into answers (question_id,kind,answer_text,accepted_variants,max_score,rubric_text) select id,'single_number',$q$2$q$,null,1,null from nq;
